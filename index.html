@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+		<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$("document").ready(function(){	
+$("table").css("border","1px solid black");
+$("td").css("border","1px solid black");
+$("input").keyup(function(){
+	var a=$("#orange").val();
+       var sum= parseInt(a)*0.25;
+       $("#total1").val(sum);
+      
+});
+$("input").keyup(function(){
+	var a=$("#higeen").val();
+       var sum= parseInt(a)*1000;
+       $("#total2").val(sum);
+       
+});
+$("input").keyup(function(){
+	var a=$("#vitmen").val();
+       var sum= parseInt(a)*10;
+       $("#total3").val(sum);
+       
+});
+$("input").keyup(function(){
+	var a=$("#mask").val();
+       var sum= parseInt(a)*5;
+       $("#total4").val(sum);
+      
+});
+$("input").keyup(function(){
+	var a=$("#book").val();
+       var sum= parseInt(a)*1;
+       $("#total5").val(sum);
+      
+});
+$("input").keyup(function(){
+	var a=$("#tissue").val();
+       var sum= parseInt(a)*0.15;
+       $("#total6").val(sum);
+       
+});
+$("input").keyup(function(){
+	var a=$("#water").val();
+       var sum= parseInt(a)*0.5;
+       $("#total7").val(sum);
+       
+});
+
+/*$("input").val(function(){
+   $("#generaltotal").val() = $("#total1").val(sum) +$("#total2").val(sum)+$("#total3").val(sum)+$("#total4").val(sum)+$("#total5").val(sum)+$("#total6").val(sum)+$("#total7").val(sum);
+});
+*/
+
+/*
+var sum1=$("#total1").val();
+var sum2= $("#total2").val();
+var sum3= $("#total3").val();
+var sum4= $("#total4").val();
+var sum5= $("#total5").val();
+var sum6=$("#total6").val();
+var sum7=$("#total7").val();
+var sum=sum1+sum2+sum3+sum4+sum5+sum6+sum7;
+ $("#generaltotal").val(sum);*/     
+ $("#generaltotal").val() =  $("#total1").val(sum) +$("#total2").val(sum)+$("#total3").val(sum)+$("#total4").val(sum)+$("#total5").val(sum)+$("#total6").val(sum)+$("#total7").val(sum);
+});
+</script>
+</head>
+<body>
+<table>
+<tr>
+	<td>Prouduct name</td>
+	<td>price</td>
+	<td>qty</td>
+	<td>total</td>
+</tr>
+<tr>
+	<td>orange juice</td>
+	<td>0.25</td>
+	<td><input type="" name="" id="orange"></td>
+	<td><input type="" name="" disabled id="total1"></td>
+</tr>
+<tr>
+	<td>higeen</td>
+	<td>1000</td>
+	<td><input type="" name="" id="higeen"></td>
+	<td><input type="" name="" disabled id="total2"></td>
+</tr>
+<tr>
+	<td>vitamen c</td>
+	<td>10</td>
+	<td><input type="" name="" id="vitmen"></td>
+	<td><input type="" name="" disabled id="total3"></td>
+</tr>
+<tr>
+	<td>mask</td>
+	<td>5</td>
+	<td><input type="" name="" id="mask"></td>
+	<td><input type="" name="" disabled id="total4"></td>
+</tr>
+<tr>
+	<td>book</td>
+	<td>1</td>
+	<td><input type="" name="" id="book"></td>
+	<td><input type="" name="" disabled id="total5"></td>
+</tr>
+<tr>
+	<td>tissue</td>
+	<td>0.15</td>
+	<td><input type="" name="" id="tissue"></td>
+	<td><input type="" name="" disabled id="total6"></td>
+</tr>
+<tr>
+	<td>water</td>
+	<td>0.5</td>
+	<td><input type="" name="" id="water"></td>
+	<td><input type="" name="" disabled id="total7"></td>
+</tr>
+<tr>
+	<td colspan="4"></td>
+</tr>
+<tr>
+	<td>total</td>
+	<td></td>
+	<td></td>
+	<td><input type="" name="" id="generaltotal"></td>
+</tr>
+
+</table>
+</body>
+</html>
